@@ -1,4 +1,4 @@
-import { app } from "./index.html";
+import { app } from "./firebase.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
 import { saveUserData } from "./db.js";
 
@@ -9,8 +9,6 @@ document.getElementById("login").addEventListener("click", () => {
   signInWithPopup(auth, provider)
     .then((result) => {
       const user = result.user;
-
-      // Save user to Firestore
       saveUserData(user);
 
       // Redirect after login
