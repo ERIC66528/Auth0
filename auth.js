@@ -36,7 +36,7 @@ document.getElementById("facebookLogin").addEventListener("click", () => {
     .catch(err => console.error("Facebook login failed:", err));
 });
 
-// Email & Password (Login)
+// Email Login
 document.getElementById("loginForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const email = document.getElementById("email").value;
@@ -51,7 +51,7 @@ document.getElementById("loginForm").addEventListener("submit", (e) => {
     .catch(err => console.error("Email login failed:", err));
 });
 
-// Email & Password (Signup)
+// Email Signup
 document.getElementById("signupForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const email = document.getElementById("signupEmail").value;
