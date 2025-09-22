@@ -1,4 +1,4 @@
-import { app } from "./index.html";
+import { app } from "./firebase.js";
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
 
 const db = getFirestore(app);
