@@ -3,35 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Rictei-tech Firebase Demo</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Welcome to Rictei-tech</h1>
   <button id="login">Sign in with Google</button>
 
-  <!-- Firebase Core -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
-
-    // Your Firebase config
-    export const firebaseConfig = {
-      apiKey: "AIzaSyDpNCkzdFvCA3z9bYmbyVlOgJW1YjVJW3s",
-      authDomain: "e-commerceweb-3186d.firebaseapp.com",
-      projectId: "e-commerceweb-3186d",
-      storageBucket: "e-commerceweb-3186d.firebasestorage.app",
-      messagingSenderId: "194467955865",
-      appId: "1:194467955865:web:8a2d90219ca41f0e582408",
-      measurementId: "G-YMNGP5V78M"
-    };
-
-    // Initialize Firebase
-    export const app = initializeApp(firebaseConfig);
-    getAnalytics(app);
-  </script>
-
-  <!-- Feature Scripts -->
   <script type="module" src="./auth.js"></script>
-  <script type="module" src="./db.js"></script>
 </body>
 </html>
